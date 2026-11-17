@@ -221,3 +221,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Projet UE01.A feux de forêt ---
+# Données téléchargées (rejouables par `make ingest`)
+data/raw/
+data/warehouse/
+# Bases DuckDB
+*.duckdb
+*.duckdb.wal
+# Identifiants (jamais commités)
+.cdsapirc
+.env
+# Artefacts dbt
+target/
+logs/
+dbt_packages/
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+.user.yml

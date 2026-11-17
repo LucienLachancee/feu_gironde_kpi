@@ -1,0 +1,8 @@
+# Profil DuckDB : un fichier local, sans serveur. Aucun identifiant.
+feu_gironde:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('FEU_DUCKDB_PATH', 'data/warehouse/feu_gironde.duckdb') }}"
+      threads: 4
