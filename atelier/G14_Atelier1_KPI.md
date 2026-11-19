@@ -1,4 +1,4 @@
-# GXX — Atelier 1 : de la décision au premier chiffre
+# G14 — Atelier 1 : de la décision au premier chiffre
 
 Projet feux de forêt · Gironde · séance du 19 novembre 2026
 
