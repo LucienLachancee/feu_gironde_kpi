@@ -241,4 +241,4 @@ dbt/logs/
 dbt/dbt_packages/
 .user.yml
 # Atelier KPI : sources téléchargées par le notebook (BDIFF brute jamais commitée, licence O04)
-atelier/data/
+kpi/data/
