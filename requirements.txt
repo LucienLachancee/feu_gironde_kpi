@@ -1,0 +1,16 @@
+# Versions épinglées (vérifiées le 2026-11-17 dans l'environnement de développement)
+# Transformations, tests, documentation
+dbt-core==1.12.7
+dbt-duckdb==1.11.1
+# 1.4.5 et non 2.0.0 : résultats faux constatés avec 2.0.0 (docs/obstacles.md, O05)
+duckdb==1.4.5
+# Ingestion
+h5netcdf==1.8.3
+h5py==3.16.0
+numpy==2.5.5
+py7zr==1.1.4
+requests==2.34.2
+openpyxl==3.1.5
+pyyaml==6.0.3
+# Accès Copernicus EWDS (danger météo historique) — clé lue dans ~/.cdsapirc ou l'environnement
+cdsapi==0.7.7

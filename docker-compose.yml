@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    working_dir: /app
+    volumes:
+      # Le dépôt est monté : data/raw et la base DuckDB persistent entre deux exécutions,
+      # ce qui permet de vérifier l'idempotence (second `make all` = aucun doublon).
+      - .:/app
+    environment:
+      DBT_PROFILES_DIR: /app/dbt
+      DBT_SEND_ANONYMOUS_USAGE_STATS: "false"
+      # Clé Copernicus EWDS (facultative) : à définir dans l'environnement ou dans un .env non commité.
+      CDSAPI_URL: ${CDSAPI_URL:-}
+      CDSAPI_KEY: ${CDSAPI_KEY:-}
+    command: make all
